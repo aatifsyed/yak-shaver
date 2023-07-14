@@ -16,7 +16,7 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           imageName: ghcr.io/${{ github.repository }}-devcontainer-${{ github.ref_name }}
-          cacheFrom: ghcr.io/${{ github.repository }}-devcontainer-${{ github.ref_name }}
+          cacheFrom: ghcr.io/${{ github.repository }}-devcontainer-${{ github.ref_name }},ghcr.io/${{ github.repository }}-devcontainer-main
           push: always
   cargo-clippy:
     runs-on: ubuntu-latest
