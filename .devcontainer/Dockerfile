@@ -49,3 +49,5 @@ RUN rustup target add \
 
 # Needed for cargo-udeps
 RUN rustup toolchain add nightly
+
+RUN rustup component add clippy
