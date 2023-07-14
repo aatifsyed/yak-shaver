@@ -38,7 +38,7 @@ RUN : \
     && cargo spellcheck --version \
     && cargo udeps --version \
     # always one, isn't there...
-    && cargo zigbuild -h \
+    && cargo-zigbuild --version \
     && taplo --version
 
 
